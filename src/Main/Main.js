@@ -30,7 +30,7 @@ return (
         <div className="card_items">
           {defaultClothingItems.map((item) => (
             // console.log(x);
-            <ItemCard item={item} onSelectCard={onSelectCard} />
+            <ItemCard item={item._id} onSelectCard={onSelectCard} />
           ))}
         </div>
       </section>
