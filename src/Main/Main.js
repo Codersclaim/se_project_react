@@ -28,9 +28,9 @@ return (
       <section className="card_section" id="card-section">
         Today is {weatherTemp} F / You may want to wear:
         <div className="card_items">
-          {defaultClothingItems.map((item) => (
+          {filteredCards.map((item) => (
             // console.log(x);
-            <ItemCard item={item._id} onSelectCard={onSelectCard} />
+            <ItemCard item={item} key= {item._id} onSelectCard={onSelectCard} />
           ))}
         </div>
       </section>
