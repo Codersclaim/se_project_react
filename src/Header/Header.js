@@ -1,9 +1,9 @@
-import './Header.css'
+import "./Header.css";
 
-const Header = ({onCreateModal}) => {
-console.log('Header');
+const Header = ({ onCreateModal }) => {
+  console.log("Header");
 
-return(
+  return (
     <div>
       <header className="header">
         <div className="header__logo">
@@ -16,14 +16,18 @@ return(
 
         <div className="header__avatar-logo">
           <div>
-            <button className="button" type="text" onClick= {onCreateModal}>Add New Clothes</button>
+            <button className="button" type="text" onClick={onCreateModal}>
+              Add New Clothes
+            </button>
           </div>
           <div>Name</div>
-          <div><img src="/images/avatar.svg" alt="avatar" /></div>
+          <div>
+            <img src="/images/avatar.svg" alt="avatar" />
+          </div>
         </div>
       </header>
     </div>
-)
-}
+  );
+};
 
 export default Header;
