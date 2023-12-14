@@ -4,8 +4,9 @@
     justify-content: space-between;
     align-items: center;
     min-height: 60px;
-    padding: 0 20px;
+    padding: 0 40px;
     align-items: center;
+    
 }
 
 .header__logo{
@@ -22,10 +23,18 @@ align-items: center;
 .header__name {
 margin-right: 12px;
 margin-left:  20px;
-font-family: "Inter";
+font-family: "Cabinet Grotesk", Arial, sans-serif;
+font-weight: 700;
+font-size: 20px;
+line-height: 1.2;
 }
 
-.button{
+.header__button{
     border: none;
     background-color: white;
+    font-family: "Cabinet Grotesk", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    
 }
