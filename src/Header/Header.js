@@ -1,5 +1,5 @@
 import "./Header.css";
-
+import avatar from "../images/avatar.svg"
 const Header = ({ onCreateModal }) => {
   console.log("Header");
 
@@ -17,12 +17,12 @@ const Header = ({ onCreateModal }) => {
         <div className="header__avatar-logo">
           <div>
             <button className="button" type="text" onClick={onCreateModal}>
-              Add New Clothes
+              + Add clothes
             </button>
           </div>
-          <div>Name</div>
+          <div className="header__name" >Terrence Tegegne</div>
           <div>
-            <img src="/images/avatar.svg" alt="avatar" />
+            <img src={avatar} alt="avatar" />
           </div>
         </div>
       </header>

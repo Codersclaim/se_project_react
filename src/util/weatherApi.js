@@ -1,32 +1,28 @@
+import { latitude, longitude, APIkey } from "./constants";
 // https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${APIkey}
 // b4332d280df26eef392ceece9ed2ba08
-
-const latitude = 44.34;
-const longitude = 10.99;
-const APIkey = "b4332d280df26eef392ceece9ed2ba08";
 
 export const getForcastWeather = () => {
   const weatherApi = fetch(
     `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${APIkey}`
-  ).then((res) => { 
+  ).then((res) => {
     // console.log(res);
     if (res.ok) {
-    return res.json();
-  } else {
-    return Promise.reject(`Error: ${res.status}`);
-  }
-});
-return weatherApi;
+      return res.json();
+    } else {
+      return Promise.reject(`Error: ${res.status}`);
+    }
+  });
+  return weatherApi;
 };
 
-
 export const parseWeatherData = (data) => {
-    // console.log(data);
-    const main = data.main;
-    const temperature = main && main.temp;
-    console.log(Math.ceil(temperature));
-    return Math.ceil(temperature);
-}; 
+  // console.log(data);
+  const main = data.main;
+  const temperature = main && main.temp;
+  console.log(Math.ceil(temperature));
+  return Math.ceil(temperature);
+};
 
 // const response = {
 //     "coord": {

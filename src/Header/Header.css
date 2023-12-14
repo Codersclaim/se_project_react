@@ -10,14 +10,19 @@
 
 .header__logo{
 display: flex;
- gap: 20px;
+ gap: 24px;
  align-items: center;
 }
 
 .header__avatar-logo{
 display: flex;
-gap: 20px;
 align-items: center;
+}
+
+.header__name {
+margin-right: 12px;
+margin-left:  20px;
+font-family: "Inter";
 }
 
 .button{

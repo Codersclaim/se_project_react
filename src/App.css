@@ -21,8 +21,8 @@
 .card_section{
 display: flex;
 flex-wrap: wrap;
-gap: 20px;
-margin-top: 20px;
+margin-top: 40px;
+font-size: 20px;
 }
 
 .card_name{
@@ -40,10 +40,11 @@ display: flex;
 flex-wrap: wrap;
 gap: 20px;
 justify-content: center;
-margin-top: 20px;
+margin-top: 34px;
 }
 
 .footer{
     display: flex;
     justify-content: space-between;
+    margin-top: 171px;
 }

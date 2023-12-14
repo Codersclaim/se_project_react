@@ -3,6 +3,7 @@ import WeatherCard from "../WeatherCard/WeatherCard";
 import ItemCard from "../ItemCard/ItemCard";
 import { useMemo } from "react";
 
+
 function Main({ weatherTemp, onSelectCard }) {
   const weatherType = useMemo(() => {
     if (weatherTemp >= 86) {
@@ -26,7 +27,7 @@ function Main({ weatherTemp, onSelectCard }) {
     <main className="main">
       <WeatherCard day={true} type="sunny" weatherTemp={weatherTemp} />
       <section className="card_section" id="card-section">
-        Today is {weatherTemp} F / You may want to wear:
+        Today is {weatherTemp}°F / You may want to wear:
         <div className="card_items">
           {filteredCards.map((item) => (
             // console.log(x);
