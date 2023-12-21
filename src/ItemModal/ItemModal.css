@@ -1,3 +1,51 @@
+.modal__content-item{
+display: flex;
+flex-direction: row;
+position: relative;
+width: 610px;
+height: 498px;
+background-color: white;
+font-weight: 700;
+font-family: "Cabinet Grotesk", Arial, sans-serif;
+padding: 20px 20px;
+}
 .modal__button{
+border: none;
+background-image: url(../../images/close.svg);
+background-size: contain;
+background-repeat: no-repeat;
+width: 20px;
+height: 20px;
+position: absolute;
+right: 20px;
+top: 20px;
+}
+
+.modal__item-weather{
+font-size: 20px;
+font-weight: 700;
+line-height: 1.2;
+margin-top: 10px;
+}
+
+.modal__item-name{
+position: relative;
+font-size: 16px;
+font-weight: 700;
+font-family: "Cabinet Grotesk", Arial, sans-serif;
+}
+
+.modal__item-image{
+border-radius: 20px;
+}
+
+.modal__item-container{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: baseline;
+}
+
+.modal__button-delete{
 border: none;
 }

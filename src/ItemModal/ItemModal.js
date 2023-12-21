@@ -1,14 +1,23 @@
-const ItemModal = ({selectedCard, onClose}) => {
+const ItemModal = ({ selectedCard, onClose }) => {
   console.log("ItemModal");
   return (
     <div className={`modal`}>
-      <div className="modal__content">
-      <button className='modal__button' type="button" onClick={onClose}>
-           Close
+      <div className="modal__content-item">
+        <button className="modal__button" type="button" onClick={onClose}>
+          {" "}
         </button>
-        <img src={selectedCard.link} />
-        <div>{selectedCard.name} </div>
-        <div>Weather type: {selectedCard.weather} </div>
+        <img
+          className="modal__item-image"
+          src={selectedCard.link}
+          alt={selectedCard.name}
+        />
+        <h3 className="modal__item-name">{selectedCard.name} </h3>
+        <div className="modal__item-container">
+          <div className="modal__item-weather">
+            Weather type: {selectedCard.weather}{" "}
+          </div>
+          <button className="modal__button-delete" type="button"></button>
+        </div>
       </div>
     </div>
   );

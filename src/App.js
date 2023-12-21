@@ -1,6 +1,6 @@
 // import logo from "./logo.svg";
-import "./App.css";
 
+import "./App.css";
 import Header from "./Header/Header";
 // import WeatherCard from "./WeatherCard/WeatherCard";
 // import ItemCard from "./ItemCard/ItemCard";
@@ -39,7 +39,7 @@ function App() {
   }, []);
   console.log(temp);
   return (
-    <div>
+    <div className="page">
       <Header onCreateModal={handleCreateModal} />
       <Main weatherTemp={temp} onSelectCard={handleSelectedCard} />
       <Footer />
