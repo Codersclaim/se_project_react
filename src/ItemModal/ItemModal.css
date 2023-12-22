@@ -9,9 +9,9 @@ font-weight: 700;
 font-family: "Cabinet Grotesk", Arial, sans-serif;
 padding: 20px 20px;
 }
-.modal__button{
+.modal__button-close{
 border: none;
-background-image: url(../../images/close.svg);
+background-image: url(../images/close.svg);
 background-size: contain;
 background-repeat: no-repeat;
 width: 20px;

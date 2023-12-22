@@ -3,8 +3,8 @@ const ItemModal = ({ selectedCard, onClose }) => {
   return (
     <div className={`modal`}>
       <div className="modal__content-item">
-        <button className="modal__button" type="button" onClick={onClose}>
-          {" "}
+        <button className="modal__button-close" type="button" onClick={onClose}>
+          
         </button>
         <img
           className="modal__item-image"

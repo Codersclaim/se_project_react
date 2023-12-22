@@ -24,7 +24,7 @@ padding: 34px 36px;
     line-height: 1.2;
 }
 
-.modal__button{
+/* .modal__button-close{
     border: none;
     background-image: url(../../images/close.svg);
     background-size: contain;
@@ -34,4 +34,4 @@ padding: 34px 36px;
     position: absolute;
     right: 20px;
     top: 20px;
-    }
+    } */
