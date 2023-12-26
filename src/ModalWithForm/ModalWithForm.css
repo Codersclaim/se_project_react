@@ -15,23 +15,35 @@ max-width: 496px;
 height: 436px;
 width: 100%;
 border-radius: 20px;
-padding: 34px 36px;
+padding: 28px;
 }
 
 
 .modal__title{
+font-family: "Cabinet Grotesk", Arial, sans-serif;
+font-weight: 700;
     font-size: 16px;
     line-height: 1.2;
+    margin-bottom: 24px;
+    margin-top: 0;
 }
 
-/* .modal__button-close{
+.modal__close-button{
     border: none;
-    background-image: url(../../images/close.svg);
+    background-image: url(../images/close.svg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
     position: absolute;
-    right: 20px;
-    top: 20px;
-    } */
+    right: 310px;
+    top: 260px;
+    }
+
+    .modal__button-submit{
+font-family: "Cabinet Grotesk", Arial, sans-serif;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.2;
+    border: none;
+    }

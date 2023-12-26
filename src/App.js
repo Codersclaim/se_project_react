@@ -45,21 +45,21 @@ function App() {
       <Footer />
       {activeModal === "create" && (
         <ModalWithForm title="New Garment" onClose={handleCloseModal}>
-          <label>
-            Name <input type="text" name="name" minLength="1" maxLength="30" />
+          <label className="modal__select-name">
+            Name <input className='modal__box-text' placeholder="Name" type="text" name="name" minLength="1" maxLength="30" />
           </label>
-          <label>
-            Image <input type="url" name="link" minLength="1" maxLength="30" />
+          <label className="modal__select-link">
+            Image <input className="modal__text-box" placeholder="Image Url" type="url" name="link" minLength="1" maxLength="30" />
           </label>
-          <p>Select the weather type:</p>
-          <div>
-            <div>
+          <p className="modal__select">Select the weather type:</p>
+          <div className="modal__select-radio">
+            <div className="modal__select-hot">
               <input type="radio" id="hot" value="hot" /> <label>Hot</label>
             </div>
-            <div>
+            <div className="modal__select-warm">
               <input type="radio" id="warm" value="warm" /> <label>Warm</label>
             </div>
-            <div>
+            <div className="modal__select-cold">
               <input type="radio" id="cold" value="cold" /> <label>Cold</label>
             </div>
           </div>

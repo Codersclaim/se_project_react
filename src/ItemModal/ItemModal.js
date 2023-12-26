@@ -1,3 +1,4 @@
+import "./ItemModal.css";
 const ItemModal = ({ selectedCard, onClose }) => {
   console.log("ItemModal");
   return (
