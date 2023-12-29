@@ -1,4 +1,4 @@
-import "./components/WeatherCard.css";
+import "./WeatherCard.css";
 import { weatherOptions } from "../util/constants";
 
 // const weatherOptions = [
