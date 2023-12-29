@@ -1,0 +1,18 @@
+.weather_card{
+    position: relative;
+}
+
+.weather_card-info{
+    position: absolute;
+    font-family: "Cabinet Grotesk", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    top: 20px;
+    left: 16px;
+    color: white;
+}
+
+.weather_card-image{
+       width: 100%;}
+
+    

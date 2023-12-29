@@ -1,0 +1,54 @@
+.modal {
+    position: fixed;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+}
+.modal__content{
+background-color: white;
+max-width: 496px;
+width: 100%;
+border-radius: 20px;
+padding: 28px;
+}
+
+
+.modal__title{
+font-family: "Cabinet Grotesk", Arial, sans-serif;
+font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+
+.modal__close-button{
+    border: none;
+    background-image: url(../images/close.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 360px;
+    top: 290px
+    
+    }
+
+    .modal__button-submit{
+    font-family: "Cabinet Grotesk", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px 8px 16px;
+    background-color: #000;
+    opacity: 30%;
+    color: #fff;
+    }

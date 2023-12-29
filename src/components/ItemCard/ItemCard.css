@@ -1,0 +1,27 @@
+.card{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.card_name{
+    font-family: "Cabinet Grotesk", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    position: relative;
+    top: 40px;
+    width: 30%;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.card_image{
+border-radius: 20px;
+border: 1px solid #c0c0c0;
+width: 328px;
+height:328px;
+
+}
