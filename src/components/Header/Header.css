@@ -42,3 +42,10 @@ line-height: 1.2;
 .header__button:hover{
     cursor: pointer;
 }
+
+.header__location{
+    font-family: "Cabinet Grotesk", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+}

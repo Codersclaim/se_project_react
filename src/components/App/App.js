@@ -16,6 +16,7 @@ function App() {
   const [activeModal, setActiveModal] = useState("");
   const [selectedCard, setSelectedCard] = useState({});
   const [temp, setTemp] = useState(0);
+  const [city, setCity] = useState("");
 
   const handleCreateModal = () => {
     setActiveModal("create");
@@ -30,28 +31,50 @@ function App() {
   };
   // console.log(selectedCard);
 
-// const modalRef = useRef(null);
+  // const modalRef = useRef(null);
 
   useEffect(() => {
-    getForcastWeather().then((data) => {
-      // console.log(data);
-      const temperature = parseWeatherData(data);
-      setTemp(temperature);
-    });
+    getForcastWeather()
+      .then((data) => {
+        // console.log(data);
+        const currentCity = data.name;
+        setCity(currentCity);
+        const temperature = parseWeatherData(data);
+        setTemp(temperature);
+      })
+      .catch((error) => {
+        console.err("Error fetching weather data", error);
+      });
   }, []);
-  console.log(temp);
+  // console.log(temp);
   return (
     <div className="page">
-      <Header onCreateModal={handleCreateModal} />
+      <Header onCreateModal={handleCreateModal} city={city} />
       <Main weatherTemp={temp} onSelectCard={handleSelectedCard} />
       <Footer />
       {activeModal === "create" && (
         <ModalWithForm title="New Garment" onClose={handleCloseModal}>
           <label className="modal__select-name">
-            Name <input className='modal__box-text' placeholder="Name" type="text" name="name" minLength="1" maxLength="30" />
+            Name{" "}
+            <input
+              className="modal__box-text"
+              placeholder="Name"
+              type="text"
+              name="name"
+              minLength="1"
+              maxLength="30"
+            />
           </label>
           <label className="modal__select-link">
-            Image <input className="modal__text-box" placeholder="Image URL" type="url" name="link" minLength="1" maxLength="30" />
+            Image{" "}
+            <input
+              className="modal__text-box"
+              placeholder="Image URL"
+              type="url"
+              name="link"
+              minLength="1"
+              maxLength="30"
+            />
           </label>
           <p className="modal__select">Select the weather type:</p>
           <div className="modal__select-radio">
