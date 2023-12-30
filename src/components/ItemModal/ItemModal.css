@@ -12,7 +12,7 @@ border-radius: 20px;
 }
 .modal__button-close{
 border: none;
-background-image: url(../images/close.svg);
+background-image: url(../../images/close.svg);
 background-size: contain;
 background-repeat: no-repeat;
 width: 20px;
