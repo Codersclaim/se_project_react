@@ -25,3 +25,7 @@ width: 328px;
 height:328px;
 
 }
+
+.card_image:hover{
+    cursor: pointer;
+}

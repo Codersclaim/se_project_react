@@ -30,6 +30,8 @@ function App() {
   };
   // console.log(selectedCard);
 
+// const modalRef = useRef(null);
+
   useEffect(() => {
     getForcastWeather().then((data) => {
       // console.log(data);
