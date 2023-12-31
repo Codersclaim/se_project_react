@@ -1,5 +1,5 @@
 import "./WeatherCard.css";
-import { weatherOptions } from "../../util/constants";
+import { weatherOptions } from "../../utils/constants";
 
 // const weatherOptions = [
 //   { url: require("../images/day/sunny.svg").default, day: true, type: "sunny" },

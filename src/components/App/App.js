@@ -9,7 +9,7 @@ import Footer from "../Footer/Footer";
 import ModalWithForm from "../ModalWithForm/ModalWithForm";
 import { useEffect, useState } from "react";
 import ItemModal from "../ItemModal/ItemModal";
-import { getForcastWeather, parseWeatherData } from "../../util/weatherApi";
+import { getForcastWeather, parseWeatherData } from "../../utils/weatherApi";
 
 function App() {
   const weatherTemp = 102;
