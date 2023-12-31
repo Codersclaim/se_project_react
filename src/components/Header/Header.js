@@ -9,7 +9,7 @@ const Header = ({ onCreateModal, date, city }) => {
   });
 
   return (
-    <div>
+    
       <header className="header">
         <div className="header__logo">
           <div>
@@ -35,7 +35,7 @@ const Header = ({ onCreateModal, date, city }) => {
           </div>
         </div>
       </header>
-    </div>
+    
   );
 };
 

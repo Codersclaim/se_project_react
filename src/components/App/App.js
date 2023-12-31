@@ -43,7 +43,7 @@ function App() {
         setTemp(temperature);
       })
       .catch((error) => {
-        console.err("Error fetching weather data", error);
+        console.error("Error fetching weather data", error);
       });
   }, []);
   // console.log(temp);
@@ -78,14 +78,17 @@ function App() {
           </label>
           <p className="modal__select">Select the weather type:</p>
           <div className="modal__select-radio">
-            <div className="modal__select-hot">
-              <input type="radio" id="hot" value="hot" /> <label>Hot</label>
+            <div >
+              <input type="radio" id="hot" value="hot" />
+              <label htmlFor="hot">Hot</label>
             </div>
-            <div className="modal__select-warm">
-              <input type="radio" id="warm" value="warm" /> <label>Warm</label>
+            <div >
+              <input type="radio" id="warm" value="warm" />
+              <label htmlFor="warm">Warm</label>
             </div>
-            <div className="modal__select-cold">
-              <input type="radio" id="cold" value="cold" /> <label>Cold</label>
+            <div >
+              <input type="radio" id="cold" value="cold" />
+              <label htmlFor="cold">Cold</label>
             </div>
           </div>
         </ModalWithForm>
